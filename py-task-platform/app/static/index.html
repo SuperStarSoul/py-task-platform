@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PyTask Platform · Python 任务管理平台</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">Py</div>
+    <div class="brand-text">
+      <h1>PyTask Platform</h1>
+      <p>Python 任务管理平台 · 本地 MongoDB</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="db-status" id="db-status" title="MongoDB 连接状态"><i class="dot"></i>数据库</span>
+    <button class="btn btn-primary" id="btn-new-task">+ 新建任务</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab active" data-view="dashboard">仪表盘</button>
+  <button class="tab" data-view="templates">任务模板</button>
+  <button class="tab" data-view="runs">运行记录</button>
+  <button class="tab" data-view="free">自由运行</button>
+</nav>
+
+<main id="view-root"></main>
+
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
